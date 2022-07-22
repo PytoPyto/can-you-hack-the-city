@@ -1,0 +1,35 @@
+@keyframes HoverDoc {
+    0% {
+
+        box-shadow: 7px 7px 14px #20202320,
+        -7px -7px 14px #20202320;
+    }
+    100% {
+        box-shadow: 7px 7px 14px #20202320 inset,
+        -7px -7px 14px #20202320 inset;
+
+    }
+}
+
+.header {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff40; /* #ffffff40 -  light #20202380 - dark */
+    position: fixed;
+    width: 90%;
+    height: 60px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: 0.3s ease-in-out;
+    box-shadow: 7px 7px 14px #20202320,
+    -7px -7px 14px #20202320;
+}
+
+.header:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
