@@ -1,3 +1,13 @@
+* {
+    box-sizing: border-box;
+    font-family: "Hack Nerd Font", monospace;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+}
+
 body, html {
     display: flex;
     justify-content: space-between;

@@ -1,4 +1,13 @@
+-  let auth = true;
+-  let name = `PytoPyto`;
 head
     link(rel="stylesheet" href="/header.css")
 header.header#header
-    h1.heading-header Hello Word ...
+    span
+    h1.heading-header Can you hack the city
+    .loginBox
+        button#logInBtn.logInBtn
+            if auth === false
+                a(href="/login") Log In
+            else
+                a(href="/account") #{name}

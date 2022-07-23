@@ -10,6 +10,10 @@ app.get('/', (req, res) => {
     res.render('index', { title: 'Home' });
 });
 
+app.get('/login', (req, res) => {
+    res.render('pages/login');
+});
+
 app.listen(port, () => {
     console.log('App on http://localhost:' + port);
 });
