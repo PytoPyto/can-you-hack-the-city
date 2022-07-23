@@ -12,9 +12,10 @@
 }
 
 .header {
+
     margin-top: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background: #ffffff40; /* #ffffff40 -  light #20202380 - dark */
     position: fixed;
@@ -29,7 +30,87 @@
 
 .header:hover {
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.02);
     opacity: 0.9;
 }
 
+span {
+    width: 80px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 20px;
+}
+
+
+.logInBtn:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+* > a {
+    text-decoration: none;
+}
+
+.logInBtn {
+
+    white-space: pre-line;
+    background: #f5cb5c60;
+    width: max-content;
+    height: 40px;
+    min-width: 40px;
+    min-height: 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    box-shadow: 7px 7px 14px #20202320,
+    -7px -7px 14px #20202320;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+
+@media (max-width: 992px) {
+    span {
+        width: 40px;
+        height: 20px;
+        min-width: 40px;
+        min-height: 20px;
+    }
+
+    .logInBtn {
+        width: max-content;
+        white-space: pre-line;
+        background: #f5cb5c60;
+        height: 20px;
+        min-width: 40px;
+        min-height: 20px;
+        font-size: .6em;
+        font-weight: bold;
+        box-shadow: 3.5px 3.5px 7px #20202320,
+        -3.5px -3.5px 14px #20202320;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+    }
+
+    .header {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: #ffffff40; /* #ffffff40 -  light #20202380 - dark */
+        position: fixed;
+        width: 90%;
+        height: 60px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        transition: 0.3s ease-in-out;
+        box-shadow: 3.5px 3.5px 7px #20202320,
+        -3.5px -3.5px 7px #20202320;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: .8em;
+        font-family: "Hack Nerd Font", monospace;
+    }
+
+}
